@@ -1,0 +1,5 @@
+{
+  "name": "MovieFlix - Movie Reviews",
+  "description": "A modern, AI-powered movie review and watchlist application. Discover trending films, read reviews, and manage your personal watchlist, with all movie data generated on-the-fly by Gemini.",
+  "requestFramePermissions": []
+}
