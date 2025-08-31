@@ -1,20 +1,5 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Created a new, comprehensive README.md file for the MovieFlix application. 
 
-# Run and deploy your AI Studio app
+This documentation includes a project overview, a detailed feature list, the tech stack, and step-by-step instructions for setup and installation. 
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1h964XltbRt4PRiAGKXmMMQQNO0kvRYyK
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+It also documents the mocked API services, explains the in-memory database approach, lists required environment variables, and discusses key architectural design decisions, providing a complete guide for any developer looking to understand or contribute to the project.
