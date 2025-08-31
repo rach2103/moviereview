@@ -1,6 +1,6 @@
 import React, { createContext, useState, useCallback, ReactNode, useContext } from 'react';
-import { Movie, GroundingChunk, User } from '../types';
-import { fetchMoviesFromAI, fetchMovieDetailsFromAI, fetchRecommendedMoviesFromAI } from '../services/geminiService';
+import { Movie, GroundingChunk, User } from '../../types';
+import { fetchMoviesFromAI, fetchMovieDetailsFromAI, fetchRecommendedMoviesFromAI } from '../geminiService';
 
 interface MovieContextType {
   movies: Movie[];

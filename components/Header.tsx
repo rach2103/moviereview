@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../services/context/AuthContext';
 
 const Header: React.FC = () => {
   const { currentUser, logout } = useAuth();

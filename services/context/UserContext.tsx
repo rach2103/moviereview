@@ -1,5 +1,5 @@
 import React, { createContext, useState, ReactNode, useContext } from 'react';
-import { Movie, Review, User } from '../types';
+import { Movie, Review, User } from '../../types';
 
 interface UserContextType {
   allUsers: User[];

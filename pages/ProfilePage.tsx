@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { useUser } from '../context/UserContext';
-import { useAuth } from '../context/AuthContext';
+import { useUser } from '../services/context/UserContext';
+import { useAuth } from '../services/context/AuthContext';
 import MovieCard from '../components/MovieCard';
 import ErrorMessage from '../components/ErrorMessage';
 import UserListModal from '../components/UserListModal';

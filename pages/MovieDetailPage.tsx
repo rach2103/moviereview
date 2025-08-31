@@ -1,14 +1,14 @@
 import React, { useEffect, useMemo } from 'react';
 import { useParams, useLocation, Navigate } from 'react-router-dom';
-import { useMovies } from '../context/MovieContext';
+import { useMovies } from '../services/context/MovieContext';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
 import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
 import StarRating from '../components/StarRating';
-import { useUser } from '../context/UserContext';
+import { useUser } from '../services/context/UserContext';
 import RatingDistributionChart from '../components/RatingDistributionChart';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../services/context/AuthContext';
 
 const MovieDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useUser } from '../context/UserContext';
-import { useMovies } from '../context/MovieContext';
-import { useAuth } from '../context/AuthContext';
+import { useUser } from '../services/context/UserContext';
+import { useMovies } from '../services/context/MovieContext';
+import { useAuth } from '../services/context/AuthContext';
 import { GENRES, Movie } from '../types';
 
 const AdminDashboardPage: React.FC = () => {

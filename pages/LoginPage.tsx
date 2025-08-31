@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
-import { useUser } from '../context/UserContext';
+import { useAuth } from '../services/context/AuthContext';
+import { useUser } from '../services/context/UserContext';
 import { useNavigate } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {

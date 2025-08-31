@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { submitReviewToAI } from '../services/geminiService';
-import { useUser } from '../context/UserContext';
-import { useAuth } from '../context/AuthContext';
+import { useUser } from '../services/context/UserContext';
+import { useAuth } from '../services/context/AuthContext';
 import { Link } from 'react-router-dom';
 
 interface ReviewFormProps {

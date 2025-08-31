@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { useUser } from '../context/UserContext';
-import { useAuth } from '../context/AuthContext';
+import { useUser } from '../services/context/UserContext';
+import { useAuth } from '../services/context/AuthContext';
 import { Review } from '../types';
 
 const FeedPage: React.FC = () => {

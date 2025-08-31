@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useMovies } from '../context/MovieContext';
-import { useAuth } from '../context/AuthContext';
+import { useMovies } from '../services/context/MovieContext';
+import { useAuth } from '../services/context/AuthContext';
 import MovieCard from '../components/MovieCard';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';

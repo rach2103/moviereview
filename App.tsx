@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { MovieProvider } from './context/MovieContext';
-import { UserProvider } from './context/UserContext';
+import { MovieProvider } from './services/context/MovieContext';
+import { UserProvider } from './services/context/UserContext';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import MovieDetailPage from './pages/MovieDetailPage';
@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import FeedPage from './pages/FeedPage';
 import LoginPage from './pages/LoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './services/context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
