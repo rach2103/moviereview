@@ -2,13 +2,17 @@ Setup and Installation Instructions
 
 This project is a modern, build-less React application that runs directly in the browser.
 Prerequisites: You only need a modern web browser and a local web server to serve the files. You can use any simple static server. For example, if you have Node.js installed, you can use npx serve . from the project's root directory.
+
 Environment Variables: Create a mechanism to set the process.env.API_KEY environment variable. This is crucial for the application to function. (See the Environment Variables section below).
+
 Installation: There are no package installation steps (like npm install) because all dependencies (react, @google/genai, etc.) are loaded via a CDN using an importmap in index.html.
 
 Running the App:
 
 Start your static file server from the root directory containing index.html.
 Open your web browser and navigate to the local server's address (e.g., http://localhost:3000). The application will load and run.
+
+
 API Documentation
 The application does not have its own backend API. Instead, it interacts directly with the Google Gemini API for all dynamic movie data. All API logic is centralized in src/services/geminiService.ts.
 
@@ -16,18 +20,22 @@ Core Functions:
 
 fetchMoviesFromAI(genre?: string, searchTerm?: string): Promise<Movie[]>
 Description: Fetches a list of 50 movies from the Gemini API. Uses Google Search grounding to ensure real movie data.
+
 Parameters:
 genre (optional): Filters movies by a specific genre.
 searchTerm (optional): Searches for movies with titles related to the term.
+
 Returns: A promise that resolves to an array of Movie objects.
 fetchMovieDetailsFromAI(movieId: string, movieTitle: string): Promise<{ movie: Movie | null; sources: GroundingChunk[] }>
 Description: Fetches detailed information for a single movie, including a trailer URL and a generated list of 5 fictional reviews. It also uses Google Search grounding.
+
 Parameters:
 movieId: The unique ID of the movie.
 movieTitle: The title of the movie, used to improve the prompt's accuracy.
 Returns: A promise that resolves to an object containing the detailed Movie object and an array of web sources used by the AI.
 fetchRecommendedMoviesFromAI(favoriteGenres: string[], seenMovies: string[]): Promise<Movie[]>
 Description: Generates 6 personalized movie recommendations based on the user's favorite genres, ensuring not to include movies they have already reviewed or have on their watchlist.
+
 Parameters:
 favoriteGenres: An array of genre strings.
 seenMovies: An array of movie titles to exclude from the results.
